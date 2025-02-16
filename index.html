@@ -10,16 +10,88 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Noticias Lorem Ipsum</title>
-    <style>
-        #btnModoOscuro {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
     <div class="container-fluid bg-primary p-4 fw-bold text-center">
         <h1>Noticias deportivas Lorem Ipsum</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fútbol
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">La Liga</a></li>
+                            <li><a class="dropdown-item" href="#">Copa del Rey</a></li>
+                            <li><a class="dropdown-item" href="#">Champions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-dark">
+                            Baloncesto
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-dark">
+                            Tenis
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container justify-content-center text-center mt-4 mb-4">
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <a href="pag1.html">
+                        <img src="img/alcaraz.webp" alt="Alcaraz Open Australia" class="d-block w-100">
+                        <div class="carousel-caption text-primary bg-dark bg-opacity-75 rounded">
+                            <h3>Carlos Alcaraz se abre paso en el Open de Australia</h3>
+                            <p>Carlos Alcaraz ofrece un recital ante Nishioka y reclama un sitio en la
+                                pista central del Open de Australia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="pag2.html">
+                        <img src="img/supercopa.avif" alt="Final Supercopa" class="d-block w-100">
+                        <div class="carousel-caption text-primary bg-dark bg-opacity-75 rounded">
+                            <h3>El Barça es el campeón de la Supercopa de España</h3>
+                            <p>El Barça arrasa en la final de la Supercopa con un 2-5 ante el Madrid</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="pag3.html">
+                        <img src="img/valencia-ourense.webp" alt="Valencia Ourense" class="d-block w-100">
+                        <div class="carousel-caption text-primary bg-dark bg-opacity-75 rounded">
+                            <h3>Victoria para el Valencia en la Copa del Rey</h3>
+                            <p>El Ourense CF plantó cara al Valencia en O Couto en la Copa del Rey</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
 </body>
 
