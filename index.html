@@ -13,21 +13,25 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <div class="container-fluid bg-primary p-4 fw-bold text-center">
+    <div class="container-fluid bg-primary p-4 fw-bold text-center text-white">
         <h1>Noticias deportivas Lorem Ipsum</h1>
     </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             Fútbol
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">La Liga</a></li>
-                            <li><a class="dropdown-item" href="#">Copa del Rey</a></li>
-                            <li><a class="dropdown-item" href="#">Champions</a></li>
+                            <li><a class="dropdown-item" href="#">España</a></li>
+                            <li><a class="dropdown-item" href="#">Internacional</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -44,74 +48,76 @@
             </div>
         </div>
     </nav>
-    <div class="container justify-content-center">
-        <div class="row mt-4 mb-4">
-            <div class="col-9">
-                <div class="container-fluid">
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <div class="carousel-inner rounded">
-                            <div class="carousel-item active">
-                                <a href="pag1.html">
-                                    <img src="img/alcaraz.webp" alt="Alcaraz Open Australia" class="d-block w-100">
-                                    <div class="carousel-caption text-primary bg-dark bg-opacity-75 rounded">
-                                        <h3>Carlos Alcaraz se abre paso en el Open de Australia</h3>
-                                        <p>Carlos Alcaraz ofrece un recital ante Nishioka y reclama un sitio en la
-                                            pista central del Open de Australia</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="pag2.html">
-                                    <img src="img/supercopa.avif" alt="Final Supercopa" class="d-block w-100">
-                                    <div class="carousel-caption text-primary bg-dark bg-opacity-75 rounded">
-                                        <h3>El Barça es el campeón de la Supercopa de España</h3>
-                                        <p>El Barça arrasa en la final de la Supercopa con un 2-5 ante el Madrid</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="pag3.html">
-                                    <img src="img/valencia-ourense.webp" alt="Valencia Ourense" class="d-block w-100">
-                                    <div class="carousel-caption text-primary bg-dark bg-opacity-75 rounded">
-                                        <h3>Victoria para el Valencia en la Copa del Rey</h3>
-                                        <p>El Ourense CF plantó cara al Valencia en O Couto en la Copa del Rey</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+    <div class="container mt-4">
+        <h1 class="text-primary text-center">NOTICIAS <span class="badge rounded-pill bg-danger">Última hora</span></h1>
+        <div class="row">
+            <div class="col-lg-9">
+                <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2"></button>
                     </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <a href="pag1.html">
+                                <img src="img/alcaraz.webp" class="d-block w-100" alt="Alcaraz Open Australia">
+                                <div class="carousel-caption text-white bg-dark bg-opacity-75 rounded">
+                                    <h3>Carlos Alcaraz en el Open de Australia</h3>
+                                    <p>Recital ante Nishioka, reclamando su sitio en la pista central.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pag2.html">
+                                <img src="img/supercopa.avif" class="d-block w-100" alt="Final Supercopa">
+                                <div class="carousel-caption text-white bg-dark bg-opacity-75 rounded">
+                                    <h3>El Barça, campeón de la Supercopa</h3>
+                                    <p>Goleada 2-5 ante el Madrid.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="pag3.html">
+                                <img src="img/dennis_smith.avif" class="d-block w-100" alt="Valencia Ourense">
+                                <div class="carousel-caption text-white bg-dark bg-opacity-75 rounded">
+                                    <h3>Dennis Smith piensa en irse del Madrid</h3>
+                                    <p>El base, que llegó hace un mes, podría dejar el equipo blanco en los próximos
+                                        días.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
-            <div class="col-3">
+
+            <div class="col-lg-3 mt-4 mt-lg-0">
                 <div class="row mb-3">
                     <a href="pag4.html" class="nav-link link-dark">
-                        <img src="img/madrid_bellingham_vinicius.webp" class="rounded float-start w-100" alt="Bellingham Roja">
-                        Bellingham, otro 'caso Vinicius': 38 amarillas y tres rojas en temporada y media
+                        <img src="img/madrid_bellingham_vinicius.webp" class="rounded w-100" alt="Bellingham Roja">
+                        <p>Bellingham, otro 'caso Vinicius': 38 amarillas y tres rojas.</p>
                     </a>
                 </div>
                 <div class="row mb-3">
                     <a href="pag5.html" class="nav-link link-dark">
-                        <img src="img/flick.avif" class="rounded float-start w-100" alt="Hansi Flick">
-                        La excitante aventura del Barça de Flick
+                        <img src="img/flick.avif" class="rounded w-100" alt="Hansi Flick">
+                        <p>La emocionante aventura del Barça de Flick.</p>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <p>&copy; 2025 Noticias deportivas Lorem Ipsum | Todos los derechos reservados.</p>
     </footer>
