@@ -20,7 +20,7 @@ Es la que ve la gente al entrar a la página: `index.html`.
 
 Su contenido será pŕacticamente el mismo solo que cambiará la noticia y la imagen de la noticia. La nomenclatura del nombre del archivo consistirá en que tenga la palabra pag (abreviación de página) seguido de un número para identificarlas. Ejemplo: `pag1.html`, `pag2.html`, `pag3.html`, etc.
 
-##### Páginas de temáticas
+##### Páginas de diferentes deportes
 
 Estas páginas filtran las noticias de diferentes deportes: `futbol.html`, `baloncesto.html` y `tenis.html`
 
@@ -37,7 +37,7 @@ Lo primero y lo más importante, **Bootstrap**, el framework que es importante y
 
 **El IDE** (Entorno de Desarrollo Integrado) que he utilizado para programar es Visual Studio Code.
 
-**Los lenguajes** que he utilizado son HTML y CSS (también Markdown, para hacer este mismo archivo de la descripción del proyecto).
+**Los lenguajes** que he utilizado son HTML (también Markdown, para hacer este mismo archivo de la descripción del proyecto).
 
 ## Bibliografías
 * [Guía Bootstrap W3schools](https://www.w3schools.com/bootstrap5/index.php)
